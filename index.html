@@ -70,12 +70,40 @@
           align-items: center;
         }
       }
+      .call-button {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        background-color: #333;
+        width: 48px;
+        height: 48px;
+        border-radius: 999px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.425);
+      }
+      .call-button i,
+      .call-button i:before {
+        color: white;
+        transform: scale(1.25);
+      }
     </style>
   </head>
   <body>
+    <script
+      src="https://kit.fontawesome.com/a2f5a66a0f.js"
+      crossorigin="anonymous"
+    ></script>
     <header>
       <h1>John's Handyman Services</h1>
     </header>
+    <div class="call-button">
+      <a href="tel:5555555555" role="button">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
     <nav>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
